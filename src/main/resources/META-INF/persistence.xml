@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    
+    <persistence-unit name="GarmentPU" transaction-type="JTA">
+
+        <jta-data-source>jdbc/garmentspool</jta-data-source>
+
+        <properties>
+            <property name="jakarta.persistence.schema-generation.database.action"
+                      value="none"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
+
